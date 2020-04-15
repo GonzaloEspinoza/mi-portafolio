@@ -221,7 +221,7 @@ export default class Home extends Component{
     }
 
     render(){
-      // console.log(this.state)
+      // console.log(this.state)k
         return(
             <div>
               {this.jqueryAction()}
@@ -526,7 +526,7 @@ export default class Home extends Component{
                 <div class="ih-item circle effect6 scale_up example z-depth-4 img_center ">
                   <a data-toggle="modal"  data-target={`#modal${d.numero}`} >
                       <div class="img">
-                      <img className="img-src" src={d.url} alt="img" />
+                      <img className="img-src" src={d.url_min} alt="img" />
                       </div>
                     <div class="info">
                       <h3>{d.title}</h3>
