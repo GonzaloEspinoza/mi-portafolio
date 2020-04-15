@@ -1,0 +1,59 @@
+
+
+.message{
+    color:black;
+    overflow-y: hidden;
+}
+
+/* Parallax home */
+
+.parallax-completo{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img (14).jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text-hire{
+    background: rgba(10, 10, 49, 0.733);
+    padding: 18px;
+    color: white;
+    width: 500px;
+    text-align:center;
+    
+    
+}
+
+.text-hire h1{
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.text-content{
+    text-align: justify;
+    padding: 60px 30px 40px 30px;
+}
+.text-content h2{
+    text-align: center;
+}
+
+/* parallax 2do */
+
+.parallax-2do{
+    background-image: url('https://mdbootstrap.com/img/Photos/Others/city13.jpg');
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+  
+
+}

@@ -1,0 +1,228 @@
+html,
+body,
+header,
+.carousel {
+  height: 100%; 
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+        .navbar:not(.top-nav-collapse) {
+            background: rgba(28, 35, 49, 0.911)!important;
+        }
+    }
+
+.carousel,.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item,.view,body,html{height:100vh}.navbar{background-color:rgba(32, 30, 37, 0.2)}.page-footer,.top-nav-collapse{background-color:#1C2331}@media only screen and (max-width:768px){.navbar{background-color:#1C2331}}
+
+
+
+.version-mypage{
+  opacity: 0.6;
+}
+
+.img-header{
+  width: 100%;
+  height: 100vh;
+  background-image: url('./img/portada7.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  text-align:center;
+}
+
+.title-page{
+  font-size: 50px;
+  font-weight: 200;
+ 
+}
+
+@media screen and (max-width:640px){
+  .title-page{
+    font-size: 40px;
+    font-weight: 200;
+   
+  }
+  .subtitulo{
+    font-size: 15px;
+    font-weight: 300 !important;
+    
+  }
+}
+
+.subtitulo{
+  font-weight: 400 !important;
+  
+}
+
+.solicitar-info{
+  border-radius: 7vh;
+}
+
+
+/* header 2 */
+
+/* https://mdbootstrap.com/img/Photos/Others/images/77.jpg */
+
+.img-header2{
+  width: 100%;
+  height: 100vh;
+  background-image: url('./img/portada6.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* text-content  sobre nosotros */
+@media screen and (max-width:650) {
+  /* reglas CSS */
+  .text-content-nosotros{
+    /* font-size: 20px; */
+    text-align: justify;
+  }
+  
+}
+
+/* @media screen and (min-width:1024px) { */
+  /* reglas CSS */
+  /* .text-content-nosotros{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+  } */
+/* } */
+
+.text-content-nosotros{
+  font-size: 20px;
+  
+  text-align: justify;
+}
+
+/* sesgos  */
+
+.img-parallax{
+  width: 100%;
+  height: 230px;
+  background-image: url('http://mdbootstrap.com/img/Photos/Others/nature4.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+
+
+}
+
+/* ----- estilo del SCROLL de la pagina principal-----  */
+
+body::-webkit-scrollbar {
+  width: 0.40rem;
+}
+
+body::-webkit-scrollbar-track{
+  background: #1e1e24 !important;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #6649b8;
+}
+
+
+/* ---image paginas web -- */
+.img_center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-more-info{
+  
+  margin-bottom: auto !important;
+}
+
+
+/* ------------ */
+
+/* --Modal showDataProyect---- */
+
+
+
+@media screen and (max-width:992px){
+
+  .informacion-detalle{
+    padding-top: 30px !important;
+    margin-left: 20px !important;
+  }
+  .modal-content{
+    border-radius: 3vh !important;
+  }
+}
+
+.modal-content-title{
+  border: 0;
+  padding-bottom: 0;
+}
+
+/* -------------------------------- */
+
+
+
+/* -------footer styles------ */
+
+.footer-style{
+  background: #1D262D;
+}
+
+@media screen and (max-width:640px){
+
+  .container-formulario{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+.formulario-contacto .button-send{
+  border-radius: 7vh;
+}
+
+.formulario-contacto{
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+@media screen and (max-width:767px){
+  .texto-inf-contacto{
+    text-align: center !important;
+  }
+}
+/* -------------------------- */
+
+
+/* nuetro metodo de trabajo */
+.content-metodologia-tabajo{
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+@media screen and (max-width:992px){
+  .content-metodologia-tabajo{
+    padding-top: 60px;    
+  }
+}
+
+@media screen and (max-width:768px){
+  .container-secction-metodotrabajo{
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+
+  }
+
+}
+
+
+/* ------------------------ */
