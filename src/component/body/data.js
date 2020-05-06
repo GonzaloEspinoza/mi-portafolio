@@ -4,6 +4,10 @@ import img_mi_sitio_web_min from './img/miniaturas/gebuildv01.png'
 
 import img_web_cursos from './img/completas/cursos.png'
 
+// movie
+import img_web_movie from './img/movie/movie1.png'
+import img_web_movie_player from './img/movie/movie-player.png'
+
 
 
 
@@ -26,6 +30,15 @@ import img_web_cursos from './img/completas/cursos.png'
         description: 'Sistema de gestion de aprendizaje basado en LMS, desarrollado para gestion de los cursos, examenes, material de apoyo, administracion de usuarios, y estudiantes (no fue implementado)',
         herramientas: 'ReactJS, HTML5, CSS, MDBootstrap, NodeJS, mongoDB, API-REST (Backend)',
         url_del_sitio: "#"
+     },
+     {
+        numero:'tres',
+        url: img_web_movie,
+        url_min: img_web_movie,
+        title:'Trailers de peliculas',
+        description: 'Esta página le permite buscar la información de las películas  de su interés y le permite ver el trailer de la misma. para el desarrollo de utilizaron dos RES APIs distintas como lo es OMDB y la api de Youtube.',
+        herramientas: 'ReactJS, Bootstrap 4, CSS, HTML5, AnimeJS, REST API, MongoDB, Firebase',
+        url_del_sitio: "https://gebuildmovie.web.app/"
      }
   ]
      
