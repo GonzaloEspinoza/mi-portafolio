@@ -1,0 +1,22 @@
+
+.counter-visits{
+    top: 60px;
+    padding-left: 23px;
+    position: relative;
+    /* background: red !important; */
+    z-index: 2;
+}
+
+.counter-visits h3{
+    text-align: left;
+    font-size: 1rem;
+    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.158)); */
+    color: rgb(80, 158, 1);
+    position: absolute;
+}
+
+@media screen and (max-width:640px){
+    .counter-visits{
+        padding-left: 0;
+    }
+} 

@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import gsap from 'gsap'
+import { TimelineLite, CSSPlugin } from "gsap/all";
+
 import './home.css'
 import './img.css'
 
@@ -11,11 +14,19 @@ import PORTAFOLIO from './data'
 
 
 import img_equipo_desarrollo from './img/equipo-trabajo.png'
+import CounterVisits from '../countedVisit/counterVisit';
 
 export default class Home extends Component {
 
   constructor(props) {
     super(props)
+
+    this.logoTl = new TimelineLite({ paused:false });
+    this.nost = null;
+  
+
+
+
     this.state = {
       arrayPOrtafolio: PORTAFOLIO,
       from: 'Mi portafolio v0.1',
@@ -144,9 +155,6 @@ export default class Home extends Component {
 
   renderAlert() {
 
-
-
-
     if (!this.state.sendD) {
 
       return (
@@ -222,10 +230,53 @@ export default class Home extends Component {
 
 
 
+  componentDidMount(){
+
+
+    
+    
+    // gsap.to(".presentacion",{duration:1, x:1000})
+    // gsap.to(".presentacion", {duration: 3, rotation: 360, scale: 1});
+    // gsap.to(".presentacion", 0.2, { scale: 0, autoAlpha: 0 }, 0.1);
+    // gsap.to(".presentacion", {duration: 3, rotation: 360, scale: 1});
+    gsap.from(".presentacion", {duration: 2, x: 300, opacity: 0, scale: 0.5});
+
+
+    this.logoTl
+    .from(this.nost, {duration: 2, x: 200, ease: "bounce"})
+    .from(this.concimientos, {duration: 2, x:200, ease:"bounce"})
+
+
+    var html= document.getElementsByTagName('html')[0];
+    var elementoAparece = document.getElementsByClassName("nost");
+
+
+    document.addEventListener("scroll", ()=>{
+      var topEvent=html.scrollTop;
+
+      console.log(topEvent , '-->topEvent')
+      // console.log(elementoAparece[1].scrollTop)
+      for (let i = 0; i < elementoAparece.length; i++) {
+        var topeElementoAparece = elementoAparece[i].offsetTop;
+
+        console.log(topeElementoAparece)
+      
+        if(topEvent === topeElementoAparece+300){
+          console.log('------- sohw escroll')
+          this.logoTl.restart()
+        }
+        
+      }
+    })
+  }
+
   render() {
     // console.log(this.state)k
     return (
       <div>
+      {/* { this.scroll()} */}
+
+
         {this.jqueryAction()}
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
           <div class="container">
@@ -283,7 +334,8 @@ export default class Home extends Component {
 
           </div>
         </nav>
-
+        <CounterVisits/>
+          
         <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
 
           <ol class="carousel-indicators">
@@ -304,7 +356,7 @@ export default class Home extends Component {
 
                 <div class=" mask rgba-black-light d-flex justify-content-center align-items-center">
 
-                  <div class=" text-center white-text mx-5 wow fadeIn">
+                  <div class="presentacion text-center white-text mx-5 wow fadeIn">
                     <h1 class="mb-4">
                       <strong className="title-page ">DESARROLLADOR WEB</strong>
                     </h1>
@@ -368,7 +420,7 @@ export default class Home extends Component {
 
 
 
-
+            
           </div>
 
           <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
@@ -379,14 +431,15 @@ export default class Home extends Component {
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-
         </div>
+          
 
-
+        
         <main>
+        
           <div class=" m-lg-5 p-3 wow fadeInUp" id="nosotros">
 
-            <section class=" wow fadeIn ml-lg-5 mr-lg-5 ml-sm-5 mr-sm-5">
+            <section class=" wow fadeIn ml-lg-5 mr-lg-5 ml-sm-5 mr-sm-5" ref={ section => this.nost = section }>
 
               <div class="row contenedor-nosotros">
 
@@ -400,7 +453,7 @@ export default class Home extends Component {
                   <br />
                   <h3 class="h3-responsive mb-3 text-center p-5 font-weight-bold">SOBRE NOSOTROS</h3>
 
-                  <p className="text-content-nosotros  h1-responsive">
+                  <p className="nost text-content-nosotros  h1-responsive"  >
                     ¡Hola a todos!, soy Gonzalo y soy desarrollador freelance me dedico al diseño y desarrollo de páginas web, gracias a mi experiencia puedo crear páginas web eficientes y optimizadas para obtener los mejores resultados, adaptadas a las necesidades de tu empresa, producto o servicio.
             </p>
 

@@ -7,11 +7,14 @@ import Home from './component/body/home'
 
 import {ParallaxHome} from './component/pruebas/ParallaxHome'
 import {PaginaModerna} from './component/paginas-modernas/pagina-moderna'
+import SendVisit from './component/countedVisit/senVisit'
 
 function App() {
+  
+  SendVisit()
   return (
     <div className="App">
-
+      
       <Home/>
 
     {/* <ParallaxHome/> */}
