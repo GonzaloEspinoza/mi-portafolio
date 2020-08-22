@@ -462,7 +462,7 @@ export default class Home extends Component {
                     <strong className="pt-5">Conocimientos:</strong><br />
                     <br />
                     <strong className="text-primary">Frontend:
-              </strong>  Conocimientos en <strong> HTML5</strong>, <strong>CSS</strong> y <strong>SASS</strong> junto a los lenguajes de programación como <strong>Javascript</strong>,  conocimientos en las librerías y framework como <strong>ReactJs</strong>, <strong>VueJS</strong>, <strong>Jquery</strong>, <strong>MDBootstrap</strong>.
+              </strong>  Conocimientos en <strong> HTML5</strong>, <strong>CSS</strong> y <strong>SASS</strong> junto a los lenguajes de programación como <strong>Javascript</strong>,  conocimientos en las librerías y framework como <strong>ReactJs</strong>, <strong>Jquery</strong>, <strong>MDBootstrap</strong>.
 
             </p>
 

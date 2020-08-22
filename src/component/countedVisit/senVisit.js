@@ -6,7 +6,9 @@ const SendVisit =()=>{
     useEffect(()=>{
        
 
-        const url = 'https://email-api-rest.herokuapp.com/api/control'
+        const url = 'https://email-api-rest.herokuapp.com/api/control';
+        var verification = localStorage.visited; 
+
             const data ={
                 nameAplication:'miPortafolio'
             }
@@ -17,12 +19,18 @@ const SendVisit =()=>{
                     'Content-Type': 'application/json',
                   }
             }
-    
-            fetch(url, params)
-            .then(data=>data.json())
-            .then(res=>{
-                console.log(res)
-            })
+            
+            if(verification){
+                console.log('sitio web visitado')
+            }else{
+                localStorage.setItem('visited',true)
+                
+                fetch(url, params)
+                .then(data=>data.json())
+                .then(res=>{
+                    console.log(res)
+                })
+            }
     
         
     },[])
