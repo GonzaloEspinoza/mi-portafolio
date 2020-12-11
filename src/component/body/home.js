@@ -14,6 +14,7 @@ import PORTAFOLIO from './data'
 
 
 import img_equipo_desarrollo from './img/equipo-trabajo.png'
+import svg_group_team from './img/project_team.svg'
 import CounterVisits from '../countedVisit/counterVisit';
 
 export default class Home extends Component {
@@ -282,7 +283,7 @@ export default class Home extends Component {
           <div class="container">
 
             <a class="navbar-brand" href="#" target="_blank">
-              <strong>GEbuild <a className="version-mypage">v0.0.1</a></strong>
+              <strong>Gonzalo Espinoza <a className="version-mypage">v0.0.1</a></strong>
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -516,7 +517,7 @@ export default class Home extends Component {
                     <div className="col-lg-5">
                       {/* Featured image */}
                       <div className=" overlay rounded  mb-lg-0 mb-4">
-                        <img className="img-fluid" src={img_equipo_desarrollo} alt="Sample image" />
+                        <img className="img-fluid" src={svg_group_team} alt="Sample image" />
                         <a>
                           <div className="mask rgba-white-slight" />
                         </a>
@@ -528,7 +529,7 @@ export default class Home extends Component {
                       {/* Category */}
                       <div className="content-metodologia-tabajo col-lg-9 col-md-6 col-sm-9 text-left">
 
-                        <a className="green-text">
+                        <a className="black-text">
                           <h4 className="font-weight-bold mb-4 h4-responsive"><i class="fas fa-diagnoses text-warning pr-2"></i> Planificación. </h4>
                           <h4 className="font-weight-bold mb-4 h4-responsive"><i class="fas fa-project-diagram text-warning pr-2"></i> Diseño y usabilidad. </h4>
                           <h4 className="font-weight-bold mb-4 h4-responsive"><i class="fas fa-laptop-code text-warning pr-2"></i> Codificación, desarrollo de la web. </h4>
@@ -583,9 +584,12 @@ export default class Home extends Component {
                               <div class="img">
                                 <img className="img-src" src={d.url_min} alt="img" />
                               </div>
-                              <div class="info">
+
+                              <div class="info" style = {{backgroundImage:`url(${d.url_min})`,backgroundSize:"cover"}}>
+                              <div className="mascara">
                                 <h3>{d.title}</h3>
-                                <p>Haz clic para ver más</p>
+                                <p className="mt-5">Haz clic para ver más</p>
+                              </div>
                               </div>
                             </a>
                           </div>
@@ -628,7 +632,7 @@ export default class Home extends Component {
 
                   <p className="font-weight-bolder  text-primary">
                     <i class="far fa-envelope text-white"> Nuestro correo electronico: <br /></i > <br />
-                  gebuild20@gmail.com
+                  gonis1990@gmail.com
               </p>
 
                 </div>

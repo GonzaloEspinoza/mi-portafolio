@@ -113,7 +113,7 @@ export default class ShowModalDataPortafolio extends Component {
                             <a href={this.props.objectProtect.url_del_sitio}>
 
                               <i class="far fa-hand-point-right pr-2"></i>
-                    Visitar sitio
+                             Visitar sitio
                     {/* HIRE HERRAMIENTAS  */}
                             </a>
                           </div>

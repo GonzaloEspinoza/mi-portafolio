@@ -226,3 +226,16 @@ body::-webkit-scrollbar-thumb{
 
 
 /* ------------------------ */
+
+
+.mascara{
+  height: 100%;
+  background: rgba(6, 26, 66, 0.767) !important ; 
+  border-radius: 5%;
+}
+
+/* --------------color de los iconos de la mtodologia de trabajo--------- */
+
+.text-warning{
+  color: #4a1dc5 !important;
+}
