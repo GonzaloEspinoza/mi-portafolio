@@ -1,0 +1,39 @@
+
+  
+  .container2 {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    color: white;
+  }
+  
+  .item {
+    width: inherit;
+    height: inherit;
+    background: rgb(16, 153, 233);
+    transform-origin: 50% 100%;
+  }
+
+  #content-nosotros{
+    overflow: hidden;
+  }
+
+  #content-nosotros::before{
+    /* background-color: #ffffff;
+    background-image: linear-gradient(43deg, #4f04dbbe 0%, #32333E 46%, #3e323c 100%); */
+    content:"";
+    position: fixed;
+    display: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* filter: blur(1px); */
+    z-index: -1;
+  }
+
+
+  
