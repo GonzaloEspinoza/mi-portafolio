@@ -3,7 +3,8 @@ import {motion, AnimatePresence } from 'framer-motion';
 import './home.css'
 import './img.css'
 
-import svgAmorfa from '../../assets/svg/figuraAmorfa.svg'
+
+import svgAmorfa from '../../assets/svg/gonzaloE.svg'
 
 
 
@@ -32,7 +33,7 @@ const Home = ({ location }) => {
                 
                 <div style={{zIndex:'2'}}  className="visible md:hidden my-auto mt-28 mb-10  w-full">
                   <div className=" w-full  flex justify-center">
-                    <motion.img exit={{opacity:200}}  initial={{opacity:0, scale:2}} animate={{opacity:1, scale:1}} transition={{delay:0.6}} className="rounded-full bg-green-400" width="200" height="200" alt="" />
+                    <motion.img src={svgAmorfa} exit={{opacity:200}}  initial={{opacity:0, scale:2}} animate={{opacity:1, scale:1}} transition={{delay:0.6}} className="rounded-full " width="250" height="250" alt="" />
                   </div>
                 </div>
         
@@ -59,11 +60,9 @@ const Home = ({ location }) => {
                 
                 <div style={{zIndex:'2'}}  className="invisible md:visible my-auto w-full">
                   <div className=" w-full  flex justify-center">
-                    <motion.img exit={{opacity:200}}  initial={{opacity:0, scale:2}} animate={{opacity:1, scale:1}} transition={{delay:0.6}} className="rounded-full bg-green-400" width="200" height="200" alt="" />
+                    <motion.img src={svgAmorfa} exit={{opacity:200}}  initial={{opacity:0, scale:2}} animate={{opacity:1, scale:1}} transition={{delay:0.6}} className="rounded-full bg-green-400" width="300" height="300" alt="" />
                   </div>
                 </div>
-        
-
               </div>
 
             </div>

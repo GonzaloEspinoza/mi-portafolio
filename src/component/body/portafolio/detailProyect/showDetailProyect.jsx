@@ -14,7 +14,7 @@ const ShowDetailProyec=({closeModal, modalState, objectProtect})=>{
             
                 {/* <div   className="bg-indigo-400 flex justify-center"> */}
                    
-                    <motion.div exit={{y:900}} initial={{y:900}} animate={{y:0}} transition={{duration:1}} className=" bg-white rounded-lg w-11/12 sm:w-5/6 md:w-3/4 py-3 px-4 my-auto" >
+                    <motion.div exit={{y:900}} initial={{y:900}} animate={{y:0}} transition={{duration:0.6}} className=" bg-white rounded-lg w-11/12 sm:w-5/6 md:w-3/4 py-3 px-4 my-auto" >
                         <div className=" flex justify-between">
                             <h4 className="font-semibold" >{objectProtect.title}</h4>
                             <button onClick={closeModal} type="button" className="my-2 md:m-2"  aria-label="Close">
@@ -72,18 +72,27 @@ const ShowDetailProyec=({closeModal, modalState, objectProtect})=>{
                                             </div>
 
                                             <h5 className="mt-4">
-                                                <strong>URL disponible:</strong>
+                                                <strong>Recursos del proyecto</strong>
                                             </h5>
+                                         
                                             <div className="">
-                                                <div className="">
-                                                    <a className="flex hover:text-blue-900 text-blue-700" href={objectProtect.url_del_sitio}>
-
-                                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                                        <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-                                                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-                                                        </svg>
-                                                        Visitar sitio
+                                                <div className="flex relative gap-3 my-5">
+                                                    <a className="parent-info flex  hover:text-blue-900 text-blue-700" href={objectProtect.url_del_sitio}>
+                                                        <i class="fas fa-2x fa-external-link-square-alt"></i>
+                                                        <div className="info-text px-2 rounded-lg">
+                                                            Visitar sitio web
+                                                        </div>
                                                     </a>
+
+                                                   <div>
+                                                   <a className="parent-info" href={objectProtect.url_github_repositorio} target="_blank">
+                                                        <i className="fab fa-2x fa-github"></i>
+                                                        <div className="info-text px-2 rounded-lg">
+                                                            Ir al repositorio del proyecto
+                                                        </div>
+                                                    </a>
+                                                   </div>
+                                                    
                                                 </div>
                                             </div>
 

@@ -12,6 +12,8 @@ import Navbar from './component/navbar/navba';
 import SobreNosotros from './component/body/sobre-nosotros/sombre-nosotros';
 import RedesSociales from './component/body/contactoRedesSociales/redesSiciales/redesSociles';
 import Portafilio from './component/body/portafolio/portafolio';
+import Skills from './component/body/skills/skills';
+import Contact from './component/body/contact/contact';
 
 function App() {
   
@@ -30,13 +32,18 @@ function App() {
           <Route exact path="/"  >
                     <Home location={location}  />
           </Route>
+          <Route path="/skills">
+            <Skills location={location}></Skills>
+          </Route>
           <Route path='/nosotros'>
             <SobreNosotros location={location} />
+          </Route>
+          <Route path="/contact">
+            <Contact location={location}></Contact>
           </Route>
           <Route path="/portafolio">
             <Portafilio location={location}></Portafilio>
           </Route>
-     
         </Switch>
       {/* </Router> */}
       <RedesSociales location={location}></RedesSociales>

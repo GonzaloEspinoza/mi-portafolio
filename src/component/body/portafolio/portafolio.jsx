@@ -28,11 +28,11 @@ const Portafilio =()=>{
         <>
             <div className="pt-14 min-h-full mb-32">
             <section id="portafolio">
-              <div className="text-left">
-                <h2 className="my-5 mx-10">MI PORTAFOLIO</h2>
+              <div className="bg-green-30 container mx-auto text-center sm:text-left  pt-10 sm:pt-10">
+                <h2 className="my-5 mx-2 sm:mx-32  text-lg font-bold">MI PORTAFOLIO</h2>
               </div>
 
-              <div id="conten-items-proyects" className="bg-indigo-30 my-1 ms:mx-10 md:mx-20 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-2 place-items-center py-20">
+              <div id="conten-items-proyects" className="bg-indigo-30 my-1 ms:mx-10 md:mx-20 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-2 place-items-center py-10">
 
 
                 {
@@ -46,12 +46,11 @@ const Portafilio =()=>{
                               <div className="img">
                                 <img className="img-src" src={d.url_min} alt="img" />
                               </div>
-                              <div className="info cursor-pointer">
+                              <div className="info invisible md:visible cursor-pointer">
                                 <h3 className="pb-4">{d.title}</h3>
                               </div>
                             </a>
                           </div>
-
                         </div>
                       </motion.div>
                     )

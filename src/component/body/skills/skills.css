@@ -1,0 +1,29 @@
+
+.content-skill {
+
+   /* background: coral; */
+   /* width: 1; */
+   top: 0;
+   bottom: 0;
+   right: 0;
+   width: 100%;
+   height: 100% ;
+   /* z-index: 1; */
+}
+
+#content-fontend::before{
+   padding-top: 60px;
+   background-image: url('../../../assets/svg/frontend.svg');
+   background-size: cover;
+   /* background-attachment: fixed; */
+   background-position: left;
+   /* background-color: rgba(137, 43, 226, 0.253); */
+   position: fixed;
+   content: "";
+   top: 70px;
+   left: 0;
+   bottom: -100px;
+   width: 100%;
+   opacity: 12%;
+   z-index: -1;
+}

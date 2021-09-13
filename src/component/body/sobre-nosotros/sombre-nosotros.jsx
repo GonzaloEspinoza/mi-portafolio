@@ -39,7 +39,7 @@ const SobreNosotros = ({ location }) => {
                                 </div>
                                 <div>
                                     <motion.h1 initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.2}} className="text-4xl sm:text-5xl inline-block align-top leading-normal font-semibold text-indigo">
-                                        Desarrollando con pasion, mientras exploras el mundo
+                                        Desarrollando con pasión, mientras exploras el mundo
                                     </motion.h1>
                                     <br />
                                 </div> 
@@ -49,7 +49,7 @@ const SobreNosotros = ({ location }) => {
                        <div className="my-auto">
                         <h3 class=" h3-responsive mb-3 text-center p-5 font-weight-bold">SOBRE NOSOTROS</h3>
                             <p className="text-lg"  >
-                                ¡Hola a todos!, soy Gonzalo y soy desarrollador freelance me dedico al diseño y desarrollo de páginas web, gracias a mi experiencia puedo crear páginas web eficientes y optimizadas para obtener los mejores resultados, adaptadas a las necesidades de tu empresa, producto o servicio.
+                                ¡Hola! Soy desarrollador freelance me dedico al diseño y desarrollo de páginas web, gracias a mi experiencia puedo crear páginas web eficientes y optimizadas para obtener los mejores resultados, adaptadas a las necesidades de tu empresa, producto o servicio.
                             </p>
                             <br />
                        </div>

@@ -4,6 +4,19 @@
     overflow-y: hidden;
 }
 
+#portafolio::before{
+  background-image: url('../../../assets/svg/portafolioBg.svg');
+  background-size: cover;
+  /* background-repeat: cover; */
+  position: fixed;
+  content: '';
+  top: -30px;
+  left: -100px;
+  opacity: 14%;
+  bottom: -100px;
+  width: 100%;
+}
+
 
 /* CARD ITEMS */
 

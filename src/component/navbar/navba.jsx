@@ -75,28 +75,33 @@ const Navbar = ({location}) => {
                         <ul className="hidden md:flex gap-x-4">
                             <li className="">
                             <Link to='/'>
-                                <a className="font-semibold hover:text-gray-300">Home
+                                <a className="font-semibold hover:text-blue-300">Home
                                     {/* <span className="">(current)</span> */}
                                 </a>
                             </Link>
                             </li>
                             <li className="">
                             <Link to='/nosotros'>
-                                <a className="font-semibold hover:text-gray-300"> about
+                                <a className="font-semibold hover:text-blue-300"> about
                                     {/* <span className="">(current)</span> */}
                                 </a>
                             </Link>
                             </li>
                             <li className="">
                                 <Link to='/portafolio'>
-                                    <a className="font-semibold hover:text-gray-300" href="#servicios" target="_blank"> Portaflio  </a>
+                                    <a className="font-semibold hover:text-blue-300" href="#servicios" target="_blank"> Portaflio  </a>
                                 </Link>
                             </li>
                             <li className="">
-                                <a className="font-semibold hover:text-gray-300" href="#portafolio" target="_blank">Metodología</a>
+                                <Link to="/skills">
+                                    <a className="font-semibold hover:text-blue-300"  target="_blank">Skill</a>
+                                </Link>
                             </li>
+                                
                             <li className="">
-                                <a className="font-semibold hover:text-gray-300" href="#contacto" target="_blank">Contacto</a>
+                                <Link to="/contact">
+                                    <a  className="font-semibold hover:text-blue-300" target="_blank">Contacto</a>
+                                </Link>
                             </li>
                         </ul>
 
