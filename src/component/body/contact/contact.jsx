@@ -13,7 +13,7 @@ const Contact = () =>{
                             <h2 className="text-4xl font-bold">Es momento de hablar de tu proyecto</h2>
                         </div>
                         <div className="bg-green-300 w-full">
-                            2
+                            
                         </div>
                     </div>  
                 </div>
