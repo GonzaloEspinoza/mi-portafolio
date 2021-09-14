@@ -1,9 +1,27 @@
 .content-contact{
-    background: rgb(43, 247, 203);
     top: 0;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 90vh;
-    
+}
+
+.content-contact::before{
+    position:fixed;
+    background-image: url('../../../assets/svg/contact.svg');
+    background-repeat: cover;
+    background-size: cover;
+    content: '';
+    top: 0;
+    left: -400px;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 25%;
+    z-index: -1;
+
+}
+
+#text-recomendation{
+    background: rgb(243, 235, 221);
 }
