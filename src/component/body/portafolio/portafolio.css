@@ -5,7 +5,7 @@
 }
 
 #portafolio::before{
-  background-image: url('../../../assets/svg/portafolioBg.svg');
+  background-image: url('../img/assets/svg/portafolioBg.svg');
   background-size: cover;
   /* background-repeat: cover; */
   position: fixed;

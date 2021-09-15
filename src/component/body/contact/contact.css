@@ -3,12 +3,18 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
+}
+
+@media screen and (max-width:768px) {
+    .content-contact{
+        height: 100%;
+    }
 }
 
 .content-contact::before{
     position:fixed;
-    background-image: url('../../../assets/svg/contact.svg');
+    background-image: url('../img/assets/svg/contact.svg');
     background-repeat: cover;
     background-size: cover;
     content: '';

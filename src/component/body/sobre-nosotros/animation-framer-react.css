@@ -22,17 +22,21 @@
   }
 
   #content-nosotros::before{
-    /* background-color: #ffffff;
-    background-image: linear-gradient(43deg, #4f04dbbe 0%, #32333E 46%, #3e323c 100%); */
+    /* background-color: #ffffff; */
+    background-image: url('../img/assets/svg/aboutmee.svg');
+    background-repeat: cover;
+    background-size: cover;
+    /* background-size: 60%; */
+    
+    margin: 40px;
     content:"";
     position: fixed;
-    display: hidden;
     top: 0;
-    left: 0;
+    left: -700px;
     width: 100%;
-    height: 100vh;
-    /* filter: blur(1px); */
+    height: 100%;
     z-index: -1;
+    opacity: 20%;
   }
 
 

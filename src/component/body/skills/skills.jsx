@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import {useInView} from 'react-intersection-observer';
 import {motion} from 'framer-motion';
 import'./skills.css';
-import svgFronetn from '../../../assets/svg/frontend.svg'
 import  DataSkill from  './dataSkills/dataSkills'
 
 const Skils = ({ location }) => {

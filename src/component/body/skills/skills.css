@@ -13,7 +13,7 @@
 
 #content-fontend::before{
    padding-top: 60px;
-   background-image: url('../../../assets/svg/frontend.svg');
+   background-image: url('../img/assets/svg/frontend.svg');
    background-size: cover;
    /* background-attachment: fixed; */
    background-position: left;

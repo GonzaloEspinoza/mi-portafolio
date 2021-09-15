@@ -1,21 +1,24 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import {motion} from 'framer-motion'
 
 import './contact.css'
 
 const Contact = () =>{
 
+    useEffect(() => {
+       window.scrollTo(0,0)
+    }, []);
     return(
         <>
             <section className="content-contact my-32">
                 <motion.div initial={{y:90,opacity:0}} animate={{y:0, opacity:1}} transition={{duration:1}} className="my-20 bg-red-30 h-full">
-                    <h1 className="text-2xl font-bold text-left mx-20">Contact</h1>
-                    <div id="text-recomendation" className="bg-gray-100 mx-20 my-2 py-3 "> <h2 className="mx-20">Si tienes una idea en mente, un poryecto o simplemente quieres automatizar algun proceso de tu negocio o emprendimiento no dudes en escribirnos 👇</h2></div>
-                    <div className="flex mx-20  bg-red-20 h-full"> 
+                    <h1 className="text-2xl font-bold text-left mx-10 md:mx-20">Contact</h1>
+                    <div id="text-recomendation" className="bg-gray-100 mx-2 md:mx-20 my-2 py-3 "> <h2 className="mx-2 sm:mx-10 md:mx-20">Si tienes una idea en mente, un poryecto o simplemente quieres automatizar algun proceso de tu negocio o emprendimiento no dudes en escribirnos 👇</h2></div>
+                    <div className="grid grid-cols-1 md:flex mx-2 sm:mx-10 md:mx-20  bg-red-20 h-full"> 
                         <div className="flex justify-center items-center bg-gray-100 w-full">
-                            <h2 className="text-5xl font-bold">Es momento de hablar de tu proyecto</h2>
+                            <h2 className="text-2xl md:text-5xl font-bold">Es momento de hablar de tu proyecto</h2>
                         </div>
-                        <div className="bg-gray-100 w-full grid grid-cols-2 gap-1 justify-center items-center">
+                        <div className="bg-gray-100 w-full grid grid-cols-1 md:grid-cols-2 gap-1 justify-center items-center">
                             <div className="bg-red-20">
                                 <h1 className="text-lg font-semibold my-4">Nos puedes encontrar</h1>
                                 <div className="grid grid-cols-3">
