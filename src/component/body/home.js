@@ -33,13 +33,13 @@ const Home = ({ location }) => {
                 
                 <div style={{zIndex:'2'}}  className="visible md:hidden my-auto mt-28 mb-10  w-full">
                   <div className=" w-full  flex justify-center">
-                    <motion.img src={svgAmorfa} exit={{opacity:200}}  initial={{opacity:0, scale:2}} animate={{opacity:1, scale:1}} transition={{delay:0.6}} className="rounded-full " width="250" height="250" alt="" />
+                    <motion.img src={svgAmorfa} exit={{opacity:200}}  initial={{opacity:0, scale:2}} animate={{opacity:1, scale:1}} transition={{delay:0.6}} className="rounded-full " width="220" height="220" alt="" />
                   </div>
                 </div>
         
                 <motion.div exit={{rotate:360}} initial={{opacity:0,scale:0}} animate={{opacity:1, scale:1}} transition={{motion:0.5}} style={{zIndex:'2'}} className=" w-full :pl-auto sm:pl-10 my-auto presentacion text-center  wow">
                     {/* <p className="text-left pl-16">Soy</p> */}
-                    <p className="text-center text-title sm:text-left pl-auto sm:pl-16">¡Hola! soy Gonazalo</p>
+                    <p className="text-center text-title  pl-auto ">¡Hola! soy Gonazalo</p>
                 
                     <h1 className="mb-4">
                       <strong className="title-page text-title"><span className="text-gray-700" >SOY DESARROLLADOR </span> FULL STACK.</strong>

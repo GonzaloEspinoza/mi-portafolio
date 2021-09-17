@@ -23,7 +23,7 @@
 
   #content-nosotros::before{
     /* background-color: #ffffff; */
-    background-image: url('../img/assets/svg/aboutmee.svg');
+    background-image: url('../img/aboutmee.svg');
     background-repeat: cover;
     background-size: cover;
     /* background-size: 60%; */
@@ -36,7 +36,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 20%;
+    opacity: 0.2;
   }
 
 

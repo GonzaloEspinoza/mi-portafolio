@@ -8,7 +8,7 @@ const Navbar = ({location}) => {
     
     const [textColor, setTextColor] = useState({color:'white'});
     const MyRefMenu = React.useRef();
-    const [menView, setMenuView] = useState(false)
+    const [menView, setMenuView] = useState(true)
 
 
     useEffect(()=>{

@@ -24,7 +24,7 @@ function App() {
   const location = useLocation()
   
   return (
-    <motion.div initial={{width:'0'}}  animate={{width:'100%'}} transition={{delay:1, motion:3}} className="App">
+    <div className="App">
 
       <Navbar location={location} />
       {/* <Router> */}
@@ -47,7 +47,7 @@ function App() {
         </Switch>
       {/* </Router> */}
       <RedesSociales location={location}></RedesSociales>
-    </motion.div>
+    </div>
   );
 }
 

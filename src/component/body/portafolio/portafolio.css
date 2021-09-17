@@ -5,17 +5,26 @@
 }
 
 #portafolio::before{
-  background-image: url('../img/assets/svg/portafolioBg.svg');
-  background-size: cover;
-  /* background-repeat: cover; */
+  content:'';
   position: fixed;
-  content: '';
-  top: -30px;
-  left: -100px;
-  opacity: 14%;
-  bottom: -100px;
   width: 100%;
+  height: 100%;
+  background-image: url('../img/assets/svg/portafolio2Bg.svg');
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-size: cover;
+  
+  overflow: hidden;
+  top:70px;
+  bottom: -70px;
+  left: 0px;
+  /* color: #fff; */
+
+  opacity: 0.1;
+  /* z-index: 1; */
 }
+
+
 
 
 /* CARD ITEMS */
