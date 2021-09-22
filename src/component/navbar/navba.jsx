@@ -8,7 +8,7 @@ const Navbar = ({location}) => {
     
     const [textColor, setTextColor] = useState({color:'white'});
     const MyRefMenu = React.useRef();
-    const [menView, setMenuView] = useState(true)
+    const [menView, setMenuView] = useState(false)
 
 
     useEffect(()=>{
@@ -94,7 +94,7 @@ const Navbar = ({location}) => {
                             </li>
                             <li className="">
                                 <Link to='/portafolio'>
-                                    <a className="font-semibold hover:text-blue-500" href="#servicios" target="_blank"> Portaflio  </a>
+                                    <a className="font-semibold hover:text-blue-500" href="#servicios" target="_blank"> Portfolio  </a>
                                 </Link>
                             </li>
                           

@@ -1,6 +1,6 @@
 
-import img_mi_sitio_web from './img/completas/gebuildv01.png'
-import img_mi_sitio_web_min from './img/miniaturas/gebuildv01.png'
+import img_mi_sitio_web from './img/completas/miPortafolio.png'
+import img_mi_sitio_web_min from './img/miniaturas/miPortafolio.png'
 
 import img_web_cursos from './img/completas/cursos.png'
 
@@ -20,22 +20,38 @@ import img_noticias_bolivia_min from './img/miniaturas/noticias_bolivia_min.png'
 import img_nuxtbo from './img/completas/nuxtbo.png';
 import img_nuxtbo_min from './img/miniaturas/nuxtbo-min.png'
 
+// nuxtbo demo
+import img_nuxtboDemo from './img/completas/nuxboDemo.png'
+import img_nuxtboDemo_min from './img/miniaturas/nuxtboDemo.png'
+
 
 
 
 
   const  portafolio = [
+      {
+         numero:'cero',
+         type:'frontEnd',
+         url: img_mi_sitio_web,
+         url_min:img_mi_sitio_web_min,
+         title:'Mi portafolio',
+         description: 'Mi portafolio, realizado para mostrar información personal las distintas habilidades y conocimientos.',
+         herramientas: 'ReactJS, Reac-router-dom, Framer Motion, HTML5, CSS, Tailwindcss, Firebase, Heroku',
+         herramientasForIcons:['javascript', 'react', 'tailwind', 'css5', 'html5', 'mongodb', 'firebase', 'herok'],
+         url_del_sitio:'https://gebuildv01.web.app',
+         url_github_repositorio:"https://github.com/GonzaloEspinoza/mi-portafolio"
+      },
     {
         numero:'uno',
         type:'frontEnd',
-        url: img_mi_sitio_web,
-        url_min:img_mi_sitio_web_min,
-        title:'Mi portafolio',
-        description: 'Mi portafolio, realizado para mostrar información personal y de mis habilidades y conocimientos.',
-        herramientas: 'ReactJS, HTML5, CSS, MDBootstrap, Firebase, Heroku',
+        url: img_nuxtboDemo,
+        url_min:img_nuxtboDemo_min,
+        title:'Tienda online, nuxtboDmo',
+        description: 'NuxtboDemo es una tienda online de Nuxtbo, dicha tienda online contiene todos los productos y las dieferentes categorias, los clientes pueden comprar un producto, y el pedido le llega al dueño de la tienda',
+        herramientas: 'Reactjs, HTML5, CSS3, Tailwindcss, react-route-dom, Framer motion, Amplify de AWS, S3 de AWS, Heroku, MongoDB Atlas',
         herramientasForIcons:['javascript', 'react', 'tailwind', 'css5', 'html5', 'mongodb', 'firebase', 'herok'],
-        url_del_sitio:'https://gebuildv01.web.app',
-        url_github_repositorio:"https://github.com/GonzaloEspinoza/mi-portafolio"
+        url_del_sitio:'https://master.d2modxhc98b9tp.amplifyapp.com/',
+        url_github_repositorio:"https://github.com/Ecommerce-nodejs-react"
      },
      {
         numero:'dos',
