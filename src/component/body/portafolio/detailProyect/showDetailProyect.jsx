@@ -77,7 +77,7 @@ const ShowDetailProyec=({closeModal, modalState, objectProtect})=>{
                                          
                                             <div className="">
                                                 <div className="flex relative gap-3 my-5">
-                                                    <a className="parent-info flex  hover:text-blue-900 text-blue-700" href={objectProtect.url_del_sitio}>
+                                                    <a className="parent-info flex  hover:text-blue-900 text-blue-700" href={objectProtect.url_del_sitio} target="_blank">
                                                         <i class="fas fa-2x fa-external-link-square-alt"></i>
                                                         <div className="info-text px-2 rounded-lg">
                                                             Visitar sitio web
