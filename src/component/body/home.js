@@ -60,7 +60,7 @@ const Home = ({ location }) => {
                 
                 <div style={{zIndex:'2'}}  className="invisible md:visible my-auto w-full">
                   <div className=" w-full  flex justify-center">
-                    <motion.img  src={svgAmorfa} exit={{opacity:200}}  initial={{opacity:0, scale:2}} animate={{opacity:1, scale:1}} transition={{delay:0.6}} className="rounded-full bg-green-400" width="280" height="280" alt="" />
+                    <motion.img  src={svgAmorfa} exit={{opacity:200}}  initial={{opacity:0, scale:2}} animate={{opacity:1, scale:1}} transition={{delay:0.6}} className="rounded-full" width="280" height="280" alt="" />
                   </div>
                 </div>
               </div>

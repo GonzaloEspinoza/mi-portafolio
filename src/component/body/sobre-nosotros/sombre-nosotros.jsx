@@ -72,14 +72,14 @@ const SobreNosotros = ({ location }) => {
             <div className="mx-2 md:mx-20 grid grid-cosl-1 md:grid-cols-2 mt-10">
 
                 <div className="visible md:hidden p-3">
-                    <h2 className=" text-lg font-semibold text-left text-blue-700 my-5">Formaciónn academíca</h2>
+                    <h2 className=" text-lg font-semibold text-left text-blue-700 my-5">Formación academíca</h2>
                     <img className="mx-auto" src={formationAcademy} width="300" height="300" alt="" />
                 </div>
                 <div className="">
-                    <h2 className="invisible md:visible text-lg font-semibold text-left text-blue-700 my-5">Formaciónn academíca</h2>
+                    <h2 className="invisible md:visible text-lg font-semibold text-left text-blue-700 my-5">Formación academíca</h2>
                     <ul  className="list-disc list-inside text-left">
-                        <li>Grado alcanzado Bachiller <span className="text-gray-400"> Col. Mariscal Andres de Santa Cruz</span></li>
-                        <li>Grado de Licenciado en ingenieria de Sistemas <span className="text-gray-400"> Universidad Autónoma Tomás Frias</span> </li>
+                        <li>Grado alcanzado: Bachiller <span className="text-gray-400"> Col. Mariscal Andres de Santa Cruz</span></li>
+                        <li>Grado alcanzado: Ingeniero de sistemas <span className="text-gray-400"> Universidad Autónoma Tomás Frias</span> </li>
                     </ul>
                 </div>
                 <div className="invisible md:visible p-3">
