@@ -1,0 +1,72 @@
+/* tittle home */
+
+.type-out-dev{
+    display: block;
+    border-right: .15em solid #217AE7;
+    white-space: nowrap;
+    margin: 0 auto;
+    width: 11ch;
+    /* letter-spacing: .15em; */
+    animation: 
+        typing 3.5s steps(27) infinite, 
+        blink-caret .5s  infinite step-end alternate;
+    overflow: hidden;
+
+}
+
+@keyframes typing{
+    from {width: 0}
+    /* to {width: 100%;} */
+}
+@keyframes blink-caret {
+    /* from, to { border-color: transparent } */
+    100% { border-color: transparent }
+}
+
+
+/* logo tecnologia */
+.logo-javascript{
+    /* background-image: linear-gradient(250deg, transparent 40%, rgba(255,255,0.5) 20%); */
+    /* margin-left: -20px; */
+}
+
+
+:root{
+    --margin-lgo:-18px;
+}
+
+.logo-html{
+    margin-left: var(--margin-lgo);
+    height: 65px;
+
+}
+.logo-css{
+    margin-left: var(--margin-lgo);
+    height: 65px;
+}
+.logo-node{
+    margin-left: var(--margin-lgo);
+    height: 70px;
+    width: 60px;
+}
+.logo-react{
+    margin-left: var(--margin-lgo);
+    width: 50px;
+    height: 60px;
+
+
+}
+
+.content-tecnologias{
+    /* display: flex; */
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.images-contents{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+/* ---------------- */

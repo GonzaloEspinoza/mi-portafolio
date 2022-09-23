@@ -5,6 +5,9 @@ import MenuDesplegable from './menuDesplegable/menuDesplegable';
 
 const Navbar = ({location}) => {
 
+    console.log('navbar-component-location');
+    console.log(location);
+    console.log('navbar-component-location');
     
     const [textColor, setTextColor] = useState({color:'white'});
     const MyRefMenu = React.useRef();

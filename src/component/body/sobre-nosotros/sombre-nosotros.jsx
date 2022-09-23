@@ -7,8 +7,10 @@ import formationAcademy from '../img/assets/svg/formationAcademy.svg'
 
 const SobreNosotros = ({ location }) => {
 
+    console.log('--------')
 
     console.log(location)
+    console.log('--------')
 
     useEffect(() => {
         if (location.pathname === '/nosotros') {

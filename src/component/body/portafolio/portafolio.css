@@ -100,6 +100,7 @@
     border-radius: 5%;
   }
   .ih-item.circle .info {
+   
     position: absolute;
     top: 0;
     bottom: 0;
@@ -781,3 +782,22 @@
   
 
 /* ::::::::::::: */
+
+/* detail proyecto */
+.detail-proyeto{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 50px;
+  position: absolute;
+}
+.detail-proyeto h4{
+  color:#ffffff;
+}
+
+.detail-proyeto h4:hover{
+  color:#d6d6d6;
+}
+
+/* end */

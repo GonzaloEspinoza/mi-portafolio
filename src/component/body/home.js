@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import {motion, AnimatePresence } from 'framer-motion';
+import { useParams } from 'react-router-dom';
 import './home.css'
 import './img.css'
 
 
-import svgAmorfa from './img/assets/svg/gonzaloE.svg'
+import svgAmorfa from './img/assets/perfil/gonzaloE.png'
 
+// import tecnologies
+import logoJavascrip from './img/assets/tecnologias/javascript.png'
+import logoHtml5 from './img/assets/tecnologias/html5.png';
+import logoCss3 from './img/assets/tecnologias/css3.png'
+import logoNode from './img/assets/tecnologias/node.png';
+import logoReact from './img/assets/tecnologias/reactjs.png'
 
 
 import svg_group_team from './img/project_team.svg'
@@ -18,7 +25,11 @@ import CounterVisits from '../countedVisit/counterVisit';
 
 
 const Home = ({ location }) => {
+  const {id} =useParams;
 
+  console.log('home component');
+  console.log(id);
+  console.log('home component');
 
   return (
       
@@ -42,7 +53,10 @@ const Home = ({ location }) => {
                     <p className="text-center text-title  pl-auto ">¡Hola! soy Gonazalo</p>
                 
                     <h1 className="mb-4">
-                      <strong className="title-page text-title"><span className="text-gray-700" >SOY DESARROLLADOR </span> FULL STACK.</strong>
+                      <strong className="title-page text-title ">
+                        <span className="text-gray-700 ">SOY DESARROLLADOR </span> 
+                        <span className='type-out-dev'>FULL STACK.</span>
+                      </strong>
                     </h1>
                     {/* <p className="subtitulo wow fadeInUp">
                       <strong>Diseñamos y desarrollamos sitios web</strong>
@@ -62,6 +76,15 @@ const Home = ({ location }) => {
                   <div className=" w-full  flex justify-center">
                     <motion.img  src={svgAmorfa} exit={{opacity:200}}  initial={{opacity:0, scale:2}} animate={{opacity:1, scale:1}} transition={{delay:0.6}} className="rounded-full" width="280" height="280" alt="" />
                   </div>
+                <div className='content-tecnologias'>
+                  <div className='images-contents'>
+                    <motion.img initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1}} className='logo-javascript' width='60' height='80' src={logoJavascrip} />
+                    <motion.img initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1}} className='logo-html' width='60' height='80' src={logoHtml5} />
+                    <motion.img initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1}} className='logo-css' width='60' height='80' src={logoCss3} />
+                    <motion.img initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1}} className='logo-node' width='60' height='80' src={logoNode} />
+                    <motion.img initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1}} className='logo-react' width='60' height='70PX' src={logoReact} />
+                  </div>
+                </div>
                 </div>
               </div>
 

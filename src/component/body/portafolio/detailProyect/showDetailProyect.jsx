@@ -14,7 +14,7 @@ const ShowDetailProyec=({closeModal, modalState, objectProtect})=>{
             
                 {/* <div   className="bg-indigo-400 flex justify-center"> */}
                    
-                    <motion.div exit={{y:900}} initial={{y:900}} animate={{y:0}} transition={{duration:0.6}} className=" bg-white rounded-lg w-11/12 sm:w-5/6 md:w-3/4 py-3 px-4 my-auto" >
+                    <motion.div exit={{y:900}} initial={{y:900}} animate={{y:0}} transition={{duration:0.6}} className="bg-white rounded-lg w-11/12 sm:w-5/6 md:w-3/4 py-3 px-4 my-auto" >
                         <div className=" flex justify-between">
                             <h4 className="font-semibold" >{objectProtect.title}</h4>
                             <button onClick={closeModal} type="button" className="my-2 md:m-2"  aria-label="Close">
@@ -34,15 +34,22 @@ const ShowDetailProyec=({closeModal, modalState, objectProtect})=>{
 
                                             <div className="example z-depth-5 text-center" role="listbox">
                                                 <div className="carousel-item active example  z-depth-3  ">
-                                                    <img className="d-block w-100 " src={objectProtect.url} alt="First slide" />
+                                                   {
+                                                    objectProtect.architecture.url_images.length>0? <img className="d-block w-100 mb-5" src={objectProtect.architecture.url_images[0]} alt="First slide" />:''
+                                                   }
+                                                    {
+                                                        objectProtect.simpleDiagram.url_image.length>0?<img className="d-block w-100 mb-5" src={objectProtect.simpleDiagram.url_image[0]} alt="First slide" />:''
+                                                    }
+                                                    <img className="d-block w-100 mb-5" src={objectProtect.url} alt="First slide" />
                                                 </div>
-
                                             </div>
 
                                         </div>
 
                                     </div>
-                                    <div className="px-4 my-10 md:my-0 text-left">
+                                    <div className=" px-4 my-10 md:my-0 text-left">
+                                        <div className='description-content'>
+
                                         <h4 className="">
                                             <strong className="">Descripción del proyecto:</strong>
                                         </h4>
@@ -72,8 +79,15 @@ const ShowDetailProyec=({closeModal, modalState, objectProtect})=>{
                                             </div>
 
                                             <h5 className="mt-4">
-                                                <strong>Recursos del proyecto</strong>
+                                                <strong>Links del proyecto y github</strong>
                                             </h5>
+                                            {
+                                               objectProtect.credenciales_acceso.user!=''? <div>
+                                                    <h5>Require credenciales de acceso:</h5>
+                                                    <h5>User : {objectProtect.credenciales_acceso.user}</h5>
+                                                    <h5>Password : {objectProtect.credenciales_acceso.password}</h5>
+                                                </div>:''
+                                            }
                                          
                                             <div className="">
                                                 <div className="flex relative gap-3 my-5">
@@ -98,6 +112,8 @@ const ShowDetailProyec=({closeModal, modalState, objectProtect})=>{
 
 
                                         </div>
+                                        </div>
+
 
                                     </div>
                                 </div>

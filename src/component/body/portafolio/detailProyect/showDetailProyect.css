@@ -37,3 +37,10 @@
     background-color: rgb(209, 209, 209);
     
 }
+
+.description-content{
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    background: rgb(255, 255, 255);
+}

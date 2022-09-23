@@ -72,18 +72,15 @@ background-image: linear-gradient(43deg, #ededeb 0%, #ededebd5 46%, #ededeba2 10
   .title-page{
     font-size: 40px;
     font-weight: 400;
-   
   }
   .subtitulo{
     font-size: 15px;
     font-weight: 300px !important;
-    
   }
 }
 
 .subtitulo{
   font-weight: 400 !important;
-  
 }
 
 .solicitar-info{

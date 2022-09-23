@@ -14,6 +14,7 @@ import RedesSociales from './component/body/contactoRedesSociales/redesSiciales/
 import Portafilio from './component/body/portafolio/portafolio';
 import Skills from './component/body/skills/skills';
 import Contact from './component/body/contact/contact';
+import ContentBlog  from './component/myBlog/content_blog/contentBlog';
 
 function App() {
   
@@ -31,6 +32,9 @@ function App() {
         <Switch>
           <Route exact path="/"  >
                     <Home location={location}  />
+          </Route>
+          <Route path="/blog">
+              <ContentBlog location={location}></ContentBlog>
           </Route>
           <Route path="/skills">
             <Skills location={location}></Skills>
