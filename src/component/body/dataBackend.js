@@ -1,7 +1,6 @@
 // import src images and others
 import model_ventas from './img/assets/backend_sources/diagram-redes-sociales.png';
 
-import trailer_arquitecture  from '../body/img/assets/frontend_resources/movie_trailers/architecture.png'
 
 
 const listProyects = [

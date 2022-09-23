@@ -41,6 +41,13 @@ const ShowDetailProyec=({closeModal, modalState, objectProtect})=>{
                                                         objectProtect.simpleDiagram.url_image.length>0?<img className="d-block w-100 mb-5" src={objectProtect.simpleDiagram.url_image[0]} alt="First slide" />:''
                                                     }
                                                     <img className="d-block w-100 mb-5" src={objectProtect.url} alt="First slide" />
+                                                    {
+                                                        objectProtect.screenshots.length>0?
+                                                        objectProtect.screenshots.map((d,i)=>{
+                                                            return  <img className="d-block w-100 mb-5" src={d} alt="First slide" />
+                                                        })
+                                                        :''
+                                                    }
                                                 </div>
                                             </div>
 

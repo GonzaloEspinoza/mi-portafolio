@@ -43,8 +43,25 @@ import siste_punto_ventas_diagram from '../body/img/assets/frontend_resources/si
 
 import portafolio_diagram from '../body/img/assets/frontend_resources/portafolio-ge/diagram.png';
 
+// screeshots
+import screenshots_sis_ventas_products from '../body/img/screenshots/sis_punto_ventas/products.PNG';
+import screenshots_sis_ventas_client from '../body/img/screenshots/sis_punto_ventas/clientes.PNG';
+import screenshots_sis_ventas_reportes from '../body/img/screenshots/sis_punto_ventas/reportes.PNG';
+import screenshots_sis_ventas_resportes2 from '../body/img/screenshots/sis_punto_ventas/reportes2.PNG';
+import screenshots_sis_ventas_users from '../body/img/screenshots/sis_punto_ventas/users.PNG';
+
+// screenshots store online nuxtbo demo
+import screenshot_tienda_online_product_selected from '../body/img/screenshots/tienda_online_nuxtbo/products_selected.PNG';
+import screenshot_tienda_online_product_card_products from '../body/img/screenshots/tienda_online_nuxtbo/card_products.PNG';
+import screenshot_tienda_online_product_envio_pedido from '../body/img/screenshots/tienda_online_nuxtbo/envio_pedido.PNG';
+import screenshot_tienda_online_product_pedido from '../body/img/screenshots/tienda_online_nuxtbo/login.PNG';
+import screenshot_tienda_online_product_tienda from '../body/img/screenshots/tienda_online_nuxtbo/tienda.PNG';
+import screenshot_tienda_online_product_productos from '../body/img/screenshots/tienda_online_nuxtbo/productos.PNG';
+import screenshot_tienda_online_product_pedidos from '../body/img/screenshots/tienda_online_nuxtbo/pedidos.PNG';
+
+
   const  portafolio = [
-   ,
+
       {
          numero:'0',
          type:'frontEnd',
@@ -56,6 +73,7 @@ import portafolio_diagram from '../body/img/assets/frontend_resources/portafolio
          herramientasForIcons:['javascript', 'react', 'tailwind', 'css5', 'html5', 'mongodb', 'firebase', 'herok'],
          url_del_sitio:'https://gebuildv01.web.app',
          url_github_repositorio:"https://github.com/GonzaloEspinoza/mi-portafolio",
+         screenshots:[],
          simpleDiagram:{
             title:'Simple site diagram',
             url_image:[
@@ -79,11 +97,18 @@ import portafolio_diagram from '../body/img/assets/frontend_resources/portafolio
          url: img_landing_page,
          url_min:img_landing_page_min,
          title:'Sistema punto de ventas y emisión de tickets',
-         description: 'Sistema punto de ventas y emicion de tickets, es un sistema que permite manejar todo el inventario de productos de un negocio, registros de productos, actualizacion, elininacion, venta de productos, enmicion de ticket, reporte de ventas, reporte gastos, reporte de ventas del dia, cierre de caja y descarga de los reportes en excel ',
-         herramientas: 'ReactJs, Reac-router-dom, Framer Motion, HTML5, CSS3, Bucket AWS, Electron',
+         description: 'Sistema punto de ventas y emisión de tickets, es un sistema que permite manejar todo el inventario de productos de un negocio, registros de productos, actualizacion, elininacion, venta de productos, enmicion de ticket, reporte de ventas, reporte gastos, reporte de ventas del dia, cierre de caja y descarga de los reportes en excel ',
+         herramientas: 'ReactJs, Reac-router-dom, Framer Motion, HTML5, CSS3, Bucket AWS, ElectronJs',
          herramientasForIcons:['javascript', 'react', 'tailwind', 'css5', 'html5', 'mongodb', 'firebase', 'herok'],
          url_del_sitio:'http://bucket-food-proyect.s3-website-us-east-1.amazonaws.com/',
          url_github_repositorio:"https://github.com/sistema-punto-de-ventas/reactjs-electronjs-punto-de-ventas",
+         screenshots:[
+            screenshots_sis_ventas_products,
+            screenshots_sis_ventas_client,
+            screenshots_sis_ventas_reportes,
+            screenshots_sis_ventas_resportes2,
+            screenshots_sis_ventas_users
+         ],
          simpleDiagram:{
             title:'Simple site diagram',
             url_image:[
@@ -101,6 +126,44 @@ import portafolio_diagram from '../body/img/assets/frontend_resources/portafolio
             password:'admin'
          }
       },
+    {
+        numero:'3',
+        type:'frontEnd',
+        url: img_nuxtboDemo,
+        url_min:img_nuxtboDemo_min,
+        title:'Tienda online, nuxtboDemo',
+        description: 'NuxtboDemo es una tienda online de Nuxtbo, dicha tienda online contiene todos los productos que un dueño de negocio pueda ofrecer, clasificados de acuerdo a las dieferentes categorias, los clientes pueden comprar un producto en la tienda online, y el pedido le llega al dueño del negocio directamente al Whatsapp que estara enlazado a la tienda en linea',
+        herramientas: 'Reactjs, HTML5, CSS3, Tailwindcss, react-route-dom, Framer motion, Amplify de AWS, S3 de AWS, Heroku, MongoDB Atlas',
+        herramientasForIcons:['javascript', 'react', 'tailwind', 'css5', 'html5', 'mongodb', 'firebase', 'herok'],
+        url_del_sitio:'https://nuxtbo.netlify.app/',
+        url_github_repositorio:"https://github.com/Ecommerce-nodejs-react",
+        screenshots:[
+         screenshot_tienda_online_product_selected,
+         screenshot_tienda_online_product_card_products,
+         screenshot_tienda_online_product_envio_pedido,
+         screenshot_tienda_online_product_pedido,
+         screenshot_tienda_online_product_tienda,
+         screenshot_tienda_online_product_productos,
+         screenshot_tienda_online_product_pedidos,
+        ],
+        simpleDiagram:{
+         title:'Simple site diagram',
+         url_image:[
+            nuxtbo_diagram
+         ]
+        },
+        architecture:{
+         title:'Architecture',
+         url_images:[
+            nuxtbo_architecture
+         ]
+        },
+        credenciales_acceso:{
+         user:'pavel@gmail.com',
+         password:'admin'
+      }
+        
+     },
       {
          numero:'2',
          type:'frontEnd',
@@ -112,6 +175,7 @@ import portafolio_diagram from '../body/img/assets/frontend_resources/portafolio
          herramientasForIcons:['javascript', 'react', 'tailwind', 'css5', 'html5', 'mongodb', 'firebase', 'herok'],
          url_del_sitio: "https://gebuildmovie.web.app/",
          url_github_repositorio:"",
+         screenshots:[],
          simpleDiagram:{
             title:'Simple site diagram',
             url_image:[
@@ -129,35 +193,6 @@ import portafolio_diagram from '../body/img/assets/frontend_resources/portafolio
             password:''
          }
       },
-    {
-        numero:'3',
-        type:'frontEnd',
-        url: img_nuxtboDemo,
-        url_min:img_nuxtboDemo_min,
-        title:'Tienda online, nuxtboDemo',
-        description: 'NuxtboDemo es una tienda online de Nuxtbo, dicha tienda online contiene todos los productos y las dieferentes categorias, los clientes pueden comprar un producto, y el pedido le llega al dueño de la tienda',
-        herramientas: 'Reactjs, HTML5, CSS3, Tailwindcss, react-route-dom, Framer motion, Amplify de AWS, S3 de AWS, Heroku, MongoDB Atlas',
-        herramientasForIcons:['javascript', 'react', 'tailwind', 'css5', 'html5', 'mongodb', 'firebase', 'herok'],
-        url_del_sitio:'https://nuxtbo.netlify.app/',
-        url_github_repositorio:"https://github.com/Ecommerce-nodejs-react",
-        simpleDiagram:{
-         title:'Simple site diagram',
-         url_image:[
-            nuxtbo_diagram
-         ]
-        },
-        architecture:{
-         title:'Architecture',
-         url_images:[
-            nuxtbo_architecture
-         ]
-        },
-        credenciales_acceso:{
-         user:'',
-         password:''
-      }
-        
-     },
      {
       numero:'4',
       type:'frontEnd',
@@ -169,6 +204,7 @@ import portafolio_diagram from '../body/img/assets/frontend_resources/portafolio
       herramientasForIcons:['javascript', 'react', 'tailwind', 'css5', 'html5', 'mongodb', 'firebase', 'herok'],
       url_del_sitio: "https://nuxtbo-landingpage.netlify.app/#/",
       url_github_repositorio:"https://github.com/Ecommerce-nodejs-react/landingPageNuxtBo",
+      screenshots:[],
       simpleDiagram:{
          title:'Simple site diagram',
          url_image:[
@@ -197,16 +233,17 @@ import portafolio_diagram from '../body/img/assets/frontend_resources/portafolio
         herramientasForIcons:['javascript', 'react', 'tailwind', 'css5', 'html5', 'mongodb', 'firebase', 'herok'],
         url_del_sitio: "#",
         url_github_repositorio:"",
+        screenshots:[],
         simpleDiagram:{
          title:'Simple site diagram',
          url_image:[
-            'uriImage'
+           
          ]
         },
         architecture:{
          title:'Architecture',
          url_images:[
-            trailer_arquitecture
+           
          ]
         },
         credenciales_acceso:{
@@ -227,16 +264,17 @@ import portafolio_diagram from '../body/img/assets/frontend_resources/portafolio
       herramientasForIcons:['javascript', 'react', 'tailwind', 'css5', 'html5', 'mongodb', 'firebase', 'herok'],
       url_del_sitio: "https://play.google.com/store/apps/details?id=com.gonzalo.flutter_news_bolivia",
       url_github_repositorio:"",
+      screenshots:[],
       simpleDiagram:{
          title:'Simple site diagram',
          url_image:[
-            'uriImage'
+            
          ]
         },
         architecture:{
          title:'Architecture',
          url_images:[
-            trailer_arquitecture
+            
          ]
         },
         credenciales_acceso:{
@@ -255,16 +293,17 @@ import portafolio_diagram from '../body/img/assets/frontend_resources/portafolio
       herramientasForIcons:['javascript', 'react', 'tailwind', 'css5', 'html5', 'mongodb', 'firebase', 'herok'],
       url_del_sitio: "https://play.google.com/store/apps/details?id=com.fanaticpelis.fanpelis",
       url_github_repositorio:"",
+      screenshots:[],
       simpleDiagram:{
          title:'Simple site diagram',
          url_image:[
-            'uriImage'
+            
          ]
         },
         architecture:{
          title:'Architecture',
          url_images:[
-            trailer_arquitecture
+            
          ]
         },
         credenciales_acceso:{
